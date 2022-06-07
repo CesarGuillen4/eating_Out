@@ -1,6 +1,6 @@
 ---
 title: "Eating Out"
-author: "your name here"
+author: "Cesar Guillen"
 output: 
   html_document:
     number_sections: true
@@ -33,9 +33,13 @@ mydata <- na.omit(mydata)
 ```
 
 
+```{r}
+barchartGC(~race + eatout,data=mydata)
+barchartGC(~race + eatout,data=mydata, type="percent")
 
+```
 
-
+There is about no difference between the black and other race from how many times they eat out, but the white race seem to eat out more than both the black and other races. About 80% of the white people asked said they do eat out, where as 65% of black people who were asked if they eat out said yes they do. 
 
 
 
