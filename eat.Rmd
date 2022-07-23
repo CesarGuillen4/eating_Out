@@ -50,7 +50,11 @@ colPerc(table1)
 
 With the tables above we can see that the white population are the race that is eating out the most than the other and black races. We can see that in both tables a little above 80 percent of white people eat out, and that the white population makes up more than 80 percent of the total of people who said yes. For the black race we see that 69 percent of them say that they do eat out once per week, but they only make up 11 percent of the total population who were asked and said yes. And finally we see that the other races category has 72 percent that said yes to eating out, but they only make 6 percent of the total population that said yes. We can say that this was most likley swerewed to asking more white people than other races. 
 
-
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 
